@@ -16,38 +16,18 @@
 // checkDriverAge();
 
 // DOM Events
- // var button = document.getElementById("enter");
- // var input = document.getElementById("userinput");
- // var ul = document.querySelector("ul");
+ var button = document.getElementById("enter");
+ var input = document.getElementById("userinput");
+ var ul = document.querySelector("ul");
 
- // button.addEventListener("click", function() {
- // 	if (input.value.length > 0) {
- // 		var li = document.createElement("li");
- // 	li.appendChild(document.createTextNode(input.value));
- // 	ul.appendChild(li); 
- // 	input.value="";
- // 	}
+ button.addEventListener("click", function() {
+ 	if (input.value.length > 0) {
+ 		var li = document.createElement("li");
+ 	li.appendChild(document.createTextNode(input.value));
+ 	ul.appendChild(li); 
+ 	input.value="";
+ 	}
  	
- // })
+ })
 
- //instatiation
-
- class Player {
- 	constructor(name, type) {
- 		this.name = name;
- 		this.type = type;
- 	}
-
- }
-
- class Wizard extends Player {
- 	constructor(name, type){
- 		super(name, type)
- 	}
- 	play() {
- 		console.log(`WEEEEE I  am a ${this.type}`);
- 	}
- }
-
- const wizard1 = new Wizard('Shelly', 'Healer');
- const wizard2 = new Wizard('Aman', 'Programmer');
+ 
